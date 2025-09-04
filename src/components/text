@@ -1,0 +1,115 @@
+<form action="/submit-details" method="POST" >
+       
+        <div className="mb-3">
+          <label htmlFor="nameInput" className="form-label">User_Id</label>
+          <input
+            type="text"
+            id="nameInput"
+            name="User_Id"
+            className="form-control"
+            ref={userIdElement}
+            
+            placeholder="emma.lou"
+            required
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="locationInput" className="form-label">Location</label>
+          <input
+            type="text"
+            id="locationInput"
+            name="location"
+            className="form-control"
+            ref={locationdElement}
+           
+            placeholder="Paris, France"
+            required
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="titleInput" className="form-label">Title</label>
+          <input
+            type="text"
+            id="titleInput"
+            name="title"
+            className="form-control"
+            ref={titledElement}
+            
+            placeholder="First Day at College"
+            required
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="bodyInput" className="form-label">Body</label>
+          <textarea
+            id="bodyInput"
+            name="body"
+            className="form-control"
+           ref={bodydElement}
+            
+            placeholder="Met so many new people today..."
+            rows={4}
+            required
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="reactionInput" className="form-label">Reaction (number)</label>
+          <input
+            type="number"
+            id="reactionInput"
+            name="reaction"
+            className="form-control"
+            ref={reactiondElement}
+            
+            min={0}
+            max={10000}
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="tagsInput" className="form-label">Tags (comma separated)</label>
+          <input
+            type="text"
+            id="tagsInput"
+            name="tags"
+            className="form-control"
+           ref={tagsdElement}
+           
+            placeholder="college, friends, newBeginnings"
+          />
+        </div>
+
+        <div className="mb-3">
+          <label htmlFor="imageInput" className="form-label">Image URL</label>
+          <input
+            type="text"
+            id="imageInput"
+            name="image"
+            className="form-control"
+            ref={imagedElement}
+            
+            placeholder="https://example.com/image.jpg"
+          />
+        </div>
+         <div className="mb-3">
+          <label htmlFor="profilePicInput" className="form-label">
+            Profile Picture URL
+          </label>
+          <input
+            type="text"
+            id="profilePicInput"
+            name="profilePic"
+            className="form-control"
+            ref={profilePicdElement}
+            placeholder="https://randomuser.me/api/portraits/women/44.jpg"
+          />
+        </div>
+       
+        
+
+        <button  type="submit" value="Submit">Submit</button>
+      </form>
