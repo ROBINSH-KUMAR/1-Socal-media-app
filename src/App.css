@@ -191,7 +191,7 @@
   
 
   display: flex;
-  justify-content: flex-start; /* instead of left */
+  justify-content: space-evenly; /* instead of left */
   flex-wrap: wrap; /* ✅ this allows posts to move to the next line */
   gap: 10px; /* optional: adds spacing between posts */
   margin-top: 60px;
