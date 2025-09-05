@@ -343,15 +343,15 @@ border-radius: 25px;}
     background-position: 0% 50%;
   }
 }
-.icon {
+.icons {
   margin-right: 8px;
-  color:rgb(235, 219, 219);
+  color:rgb(211, 10, 10);
   
-  font-size: 23px;
+  font-size: 16px;
 }
-.text {
+.texts {
   font-weight: bold;
-  color:rgb(251, 251, 251);
+  color:rgb(244, 237, 233);;
  ;
   font-family: 'Dancing Script', cursive;
  padding-right: 4px;

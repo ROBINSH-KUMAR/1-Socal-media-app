@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhiskeyGlass } from "@fortawesome/free-solid-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function header({ selectedTab, dispatch }) {
@@ -29,9 +29,9 @@ export default function header({ selectedTab, dispatch }) {
               >
                 <use xlinkHref="#bootstrap"></use>
               </svg>
-              <span className="fs-4 text">Whisky </span>{" "}
-              <span className="icon">
-                <FontAwesomeIcon icon={faWhiskeyGlass} />
+              <span className="fs-4 texts">Kyora </span>{" "}
+              <span className="icons">
+                <FontAwesomeIcon icon={faEye} />
               </span>
             </a>
             {/* Desktop Nav Links */}
@@ -106,14 +106,14 @@ export default function header({ selectedTab, dispatch }) {
           style={{
             height: "3rem",
             color: "whitesmoke",
-            fontWeight: "200",
+            fontWeight: "400",
             opacity: "0.5",
             fontFamily: "'Georgia', 'Times New Roman', serif",
-            fontStyle: "italic",
-            textAlign: "center",
+            // fontStyle: "italic",
+            textAlign: "left",
           }}
         >
-          <span className="">Whisky 🔍</span>
+          <span className="" style={{fontSize:"1.3rem" }}>Search</span>
         </div>
         <ul className="nav nav-pills flex-column mb-auto">
           <li>
