@@ -1,4 +1,5 @@
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PostList from "./components/PostList";
 import Forms from "./components/Forms";
@@ -65,7 +66,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <Router basename="/1-Socal-media-app">
       <PostListProvide>
         <div className="app-container ">
           <Navbar selectedTab={selectedTab} dispatch={dispatch}></Navbar>
@@ -76,7 +77,7 @@ const App = () => {
           </div>
         </div>
       </PostListProvide>
-    </>
+    </Router>
   );
 };
 
